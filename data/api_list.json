@@ -1,0 +1,58 @@
+[
+    {
+        "category": "데이터랩",
+        "요청_URL": "API URL 예시",
+        "method": "POST",
+        "reponse_type": "JSON",
+        "description": "다양한 데이터 분석 기능"
+    },
+    {
+        "category": "검색",
+        "요청_URL": "API URL 예시",
+        "method": "GET",
+        "reponse_type": "JSON/XML",
+        "description": "블로그, 뉴스 등 검색 기능"
+    },
+    {
+        "category": "단축 URL",
+        "요청_URL": "API URL 예시",
+        "method": "GET",
+        "reponse_type": "JSON/XML",
+        "description": "URL 단축 기능"
+    },
+    {
+        "category": "이미지 캡쳐",
+        "요청_URL": "API URL 제공 여부 불확실",
+        "method": "N/A",
+        "reponse_type": "N/A",
+        "description": "웹페이지 이미지 캡처"
+    },
+    {
+        "category": "음성 캡처",
+        "요청_URL": "API URL 제공 여부 불확실",
+        "method": "N/A",
+        "reponse_type": "N/A",
+        "description": "음성 텍스트 변환"
+    },
+    {
+        "category": "네이버 공유하기",
+        "요청_URL": "API URL 제공 여부 불확실",
+        "method": "N/A",
+        "reponse_type": "N/A",
+        "description": "네이버 플랫폼에서 콘텐츠 공유"
+    },
+    {
+        "category": "네이버 오픈메인",
+        "요청_URL": "API URL 제공 여부 불확실",
+        "method": "N/A",
+        "reponse_type": "N/A",
+        "description": "네이버 메인 화면과의 연동"
+    },
+    {
+        "category": "Colva Face Recognition",
+        "요청_URL": "해당 없음",
+        "method": "N/A",
+        "reponse_type": "N/A",
+        "description": "NAVER API에서 제공하지 않는 기능"
+    }
+]
