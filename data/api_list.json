@@ -1,7 +1,7 @@
 [
     {
         "category": "데이터랩",
-        "요청_URL": "API URL 예시",
+        "api_1": "API URL 예시",
         "method": "POST",
         "reponse_type": "JSON",
         "description": "다양한 데이터 분석 기능"
