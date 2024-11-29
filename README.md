@@ -1,7 +1,6 @@
 개요 : API Test를 자동화하기 위한 Tool 만들기
 
-구조
-
+계획
 1. 타겟 : Naver Open API 중 데이터랩, 검색 당 Sample 1개씩
 - 구성 완료 후 추가 예정
 
@@ -38,4 +37,4 @@
 
 3. pytest 적용
 
-
+4. Logger 적용
