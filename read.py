@@ -3,7 +3,7 @@ import json
 
 # JSON 파일 읽기
 def json_data_read():
-    with open('data/api_list.json', 'r', encoding='utf-8') as file:
+    with open('api_data/api_search.json', 'r', encoding='utf-8') as file:
         data = json.load(file)
     return data
 
