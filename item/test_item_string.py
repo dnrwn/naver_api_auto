@@ -1,11 +1,17 @@
+# version : 0.0.2
+# 변경사항
+# - string_1, string_8 integer를 invalid Case로 변경
+# - string_1, string_8 string 특수문자를 valid로 변경
+
+
 string_1 = {
     "valid": {
         "abc",
-        123
+        "!@#$%^&*()_+"
     },
     "invalid": {
         None,
-        "!@#$%^&*()_+"
+        123
     }
 }
 
@@ -91,11 +97,11 @@ string_7 = {
 string_8 = {
     "valid": {
         "abc",
-        123
+        "!@#$%^&*()_+"
     },
     "invalid": {
         None,
-        "!@#$%^&*()_+"
+        123
     }
 }
 

@@ -4,7 +4,8 @@
     "date": "2024-11-29",
     "category": "데이터랩"
   },
-  "api_list": {
+  "api_list": [
+    {
     "api_1": {
       "URL": "https://openapi.naver.com/v1/datalab/search",
       "method": "POST",
@@ -72,5 +73,11 @@
         }
       }
     }
-  }
+    },
+    {
+      "api_2": {
+        "ttt": ""
+      }
+    }
+  ]
 }

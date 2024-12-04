@@ -3,28 +3,30 @@ import json
 
 # JSON 파일 읽기
 def json_data_read():
-    with open('api_data/api_search.json', 'r', encoding='utf-8') as file:
+    with open('api_data/api_datalab.json', 'r', encoding='utf-8') as file:
         data = json.load(file)
     return data
 
 
-def search_api_list(cate):
-    for depth_1 in json_data_read()['item']:
-        if depth_1['category'] == cate:
-            return depth_1['api_list']
+def api_list(api_name, component_1, component_2, component_3):
+    api = json_data_read()['api_list']
+    return api[][api_name][component_1][component_2][component_3]
+
+
+def api_info():
+    pass
 
 if __name__ == "__main__":
-    # api data 조회 예시
-    # search_api_list(Category)[api_name][1depth_key_name].key()
-    # 1depth_key_name = URL, method, response type, parameter, response
-    # search_api_list(Category)[api_name][1depth_key_name][2depth_key_name].key()
-    # 2depth_key_name = parameter / response list
-    # parameter : name
-    # response : name
-    # search_api_list(Category)[api_name][1depth_key_name][2depth_key_name][3depth_key_name].key()
-    # 3depth_key_name = parameter / Response data
-    # parameter : type, option
-    # response : type
-    print(search_api_list('검색')['api_1']['parameter'].keys())
-    print(search_api_list('검색')['api_1']['parameter']['query'].keys())
-    print(search_api_list('검색')['api_1']['parameter']['query']['type'])
+    api = json_data_read()['api_list']
+    # api sample
+    # api[API_NAME][COMPONENT_1][COMPONENT_2][COMPONENT_3]
+    # - COMPONENT_1 : url, method, response_type, description, parameter, response
+    # - COMPONENT_2 : parameter/response_name
+    # - COMPONENT_3 : type, option, description
+    for a in api:
+        b = list(a.keys())[0]
+        print(b)
+        print("API 선택 \n", api[0][b])
+        print("PARAMETER 선택 \n", api[0][b]['parameter'])
+        print("parameter_name 선택 \n", api[0][b]['parameter']['startDate'])
+        print("type 선택 \n", api[0][b]['parameter']['startDate']['type'])
