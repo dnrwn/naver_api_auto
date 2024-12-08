@@ -1,0 +1,26 @@
+{
+  "info": {
+    "version": "0.0.2",
+    "date": "2024-12-06",
+    "category": "api_imgae_captcha_nkey"
+  },
+  "api_imgae_captcha_nkey": {
+    "URL": "https://openapi.naver.com/v1/captcha/nkey",
+    "method": "GET",
+    "response_type": "JSON",
+    "parameter": {
+      "code": {
+        "type": "Integer",
+        "Mandatory/Optional": "Optional",
+        "description": "요청하는 작업의 코드(기본값: 0). 캡차 키 발급을 요청할 때는 값을 0으로 설정해야 합니다.",
+        "case": "integer_3"
+      }
+    },
+    "response": {
+      "key": {
+        "type": "string",
+        "description": "캡차 키"
+      }
+    }
+  }
+}
