@@ -15,8 +15,8 @@ def test_item_read(test_item):
     return data
 
 
-def api_list():
-    a = os.walk('../api_data')
+def api_list(path='../api_data'):
+    a = os.walk(path)
     b = []
     for root, _, files in a:
         for file in files:

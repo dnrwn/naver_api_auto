@@ -1,5 +1,5 @@
 {
-  "array_string_1": {
+  "array(string)_1": {
     "valid": {
       "1": [
         "a"
@@ -285,7 +285,7 @@
       "0": []
     }
   },
-  "array_string_2": {
+  "array(string)_2": {
     "valid": {
       "Null": null,
       "1": [
@@ -400,52 +400,186 @@
       "0": []
     }
   },
-  "array_string_3": {},
-  "array_string_4": {},
-  "array_json_1": {
+  "array(string)_3": {},
+  "array(string)_4": {},
+  "keywordGroups": {
     "valid": {
-      "1": [
-        "a"
+      "valid_1": [
+        {
+          "groupName": "ABC",
+          "keywords": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H",
+            "I",
+            "J",
+            "K",
+            "L",
+            "M",
+            "N",
+            "O",
+            "P",
+            "Q",
+            "R",
+            "S",
+            "T"
+          ]
+        }
       ],
-      "2": [
-        "a",
-        "b"
-      ],
-      "3": [
-        "a",
-        "b",
-        "c"
-      ],
-      "4": [
-        "a",
-        "b",
-        "c",
-        "d"
-      ],
-      "5": [
-        "a",
-        "b",
-        "c",
-        "d",
-        "e"
+      "valid_2": [
+        {
+          "groupName": "QQQ",
+          "keywords": [
+            "1234EFGH"
+          ]
+        },
+        {
+          "groupName": "WWW",
+          "keywords": [
+            "9876ZXCV"
+          ]
+        },
+        {
+          "groupName": "EEE",
+          "keywords": [
+            "5678QWER"
+          ]
+        },
+        {
+          "groupName": "RRR",
+          "keywords": [
+            "8765ASDF"
+          ]
+        },
+        {
+          "groupName": "TTT",
+          "keywords": [
+            "0000XXXX"
+          ]
+        }
       ]
     },
     "invalid": {
-      "Null": null,
-      "integer": 1,
-      "string": "ABC",
-      "6": [
-        "a",
-        "b",
-        "c",
-        "d",
-        "e",
-        "f"
+      "invalid_keyword_1": "LLLL",
+      "invalid_keyword_2": 1,
+      "invalid_keyword_3": null,
+      "invalid_keyword_4": [],
+      "invalid_keyword_5": [
+        {
+          "groupName": "QQQ",
+          "keywords": [
+            "1234EFGH"
+          ]
+        },
+        {
+          "groupName": "WWW",
+          "keywords": [
+            "9876ZXCV"
+          ]
+        },
+        {
+          "groupName": "EEE",
+          "keywords": [
+            "5678QWER"
+          ]
+        },
+        {
+          "groupName": "RRR",
+          "keywords": [
+            "8765ASDF"
+          ]
+        },
+        {
+          "groupName": "TTT",
+          "keywords": [
+            "0000XXXX"
+          ]
+        },
+        {
+          "groupName": "VVVV",
+          "keywords": [
+            "VVVV9999"
+          ]
+        }
       ],
-      "0": []
+      "invalid_groupname_1": [
+        {
+          "groupName": null,
+          "keywords": [
+            "A"
+          ]
+        }
+      ],
+      "invalid_groupname_2": [
+        {
+          "groupName": 1,
+          "keywords": [
+            "A"
+          ]
+        }
+      ],
+      "invalid_keywords_1": [
+        {
+          "groupName": "JJJJ",
+          "keywords": null
+        }
+      ],
+      "invalid_keywords_2": [
+        {
+          "groupName": "JJJJ",
+          "keywords": {
+            "A": "A"
+          }
+        }
+      ],
+      "invalid_keywords_3": [
+        {
+          "groupName": "JJJJ",
+          "keywords": 1
+        }
+      ],
+      "invalid_keywords_4": [
+        {
+          "groupName": "JJJJ",
+          "keywords": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H",
+            "I",
+            "J",
+            "K",
+            "L",
+            "M",
+            "N",
+            "O",
+            "P",
+            "Q",
+            "R",
+            "S",
+            "T",
+            "U"
+          ]
+        }
+      ],
+      "invalid_keywords_5": [
+        {
+          "groupName": "JJJJ",
+          "keywords": []
+        }
+      ]
     }
   },
-  "array_json_2": {
+  "array(JSON)_2": {
     "valid": {
       "1": [
         "a"
@@ -473,7 +607,7 @@
       "0": {}
     }
   },
-  "array_json_3": {
+  "array(JSON)_3": {
     "valid": {
       "Null": null,
       "1": [
@@ -681,196 +815,72 @@
       "Null": null
     }
   },
-  "string_startdate_1": {
+  "startdate_1": {
     "valid": {
-      "Valid_1": {
-        "startDate": "2016-01-01",
-        "endDate": "2016-01-01"
-      },
-      "Valid_2": {
-        "startDate": "2024-12-03",
-        "endDate": "2024-12-03"
-      },
-      "Valid_3": {
-        "startDate": "2024-01-01",
-        "endDate": "2024-12-03"
-      }
+      "Valid_1": "2016-01-01",
+      "Valid_2": "2024-12-03",
+      "Valid_3": "2024-01-01"
     },
     "invalid": {
-      "미만": {
-        "startDate": "2015-12-31",
-        "endDate": "2015-12-31"
-      },
-      "초과": {
-        "startDate": "2025-01-01",
-        "endDate": "2025-01-01"
-      },
-      "월 비정상": {
-        "startDate": "2023-13-01",
-        "endDate": "2024-01-01"
-      },
-      "일 비정상": {
-        "startDate": "2023-12-32",
-        "endDate": "2024-01-01"
-      },
-      "년 비정상": {
-        "startDate": "20155-01-01",
-        "endDate": "2024-01-01"
-      },
-      "날짜 범위": {
-        "startDate": "2024-12-31",
-        "endDate": "2023-01-01"
-      },
-      "Null": {
-        "startDate": "",
-        "endDate": "2024-01-01"
-      },
-      "규격": {
-        "startDate": "2024.01.01",
-        "endDate": "2024-01-01"
-      }
+      "미만": "2015-12-31",
+      "초과": "2025-01-01",
+      "월 비정상": "2023-13-01",
+      "일 비정상": "2023-12-32",
+      "년 비정상": "20155-01-01",
+      "Null_1": "",
+      "Null_2": null,
+      "규격": "2024.01.01"
     }
   },
-  "string_startdate_2": {
+  "startdate_2": {
     "valid": {
-      "Valid_1": {
-        "startDate": "2017-08-01",
-        "endDate": "2017-08-01"
-      },
-      "Valid_2": {
-        "startDate": "2024-12-03",
-        "endDate": "2024-12-03"
-      },
-      "Valid_3": {
-        "startDate": "2024-01-01",
-        "endDate": "2024-12-03"
-      }
+      "Valid_1": "2017-08-01",
+      "Valid_2": "2024-12-03",
+      "Valid_3": "2024-01-01"
     },
     "invalid": {
-      "미만": {
-        "startDate": "2017-07-31",
-        "endDate": "2017-07-31"
-      },
-      "초과": {
-        "startDate": "2025-01-01",
-        "endDate": "2025-01-01"
-      },
-      "월 비정상": {
-        "startDate": "2023-13-01",
-        "endDate": "2024-01-01"
-      },
-      "일 비정상": {
-        "startDate": "2023-12-32",
-        "endDate": "2024-01-01"
-      },
-      "년 비정상": {
-        "startDate": "20155-01-01",
-        "endDate": "2024-01-01"
-      },
-      "날짜 범위": {
-        "startDate": "2024-12-31",
-        "endDate": "2023-01-01"
-      },
-      "Null": {
-        "startDate": "",
-        "endDate": "2024-01-01"
-      },
-      "규격": {
-        "startDate": "2024.01.01",
-        "endDate": "2024-01-01"
-      }
+      "미만": "2017-07-31",
+      "초과": "2025-01-01",
+      "월 비정상": "2023-13-01",
+      "일 비정상": "2023-12-32",
+      "년 비정상": "20155-01-01",
+      "Null_1": "",
+      "Null_2": null,
+      "규격": "2024.01.01"
     }
   },
-  "string_enddate_1": {
+  "enddate_1": {
     "valid": {
-      "Valid_1": {
-        "startDate": "2016-01-01",
-        "endDate": "2016-01-01"
-      },
-      "Valid_2": {
-        "startDate": "2024-12-03",
-        "endDate": "2024-12-03"
-      },
-      "Valid_3": {
-        "startDate": "2024-01-01",
-        "endDate": "2024-12-03"
-      }
+      "Valid_1": "2016-01-01",
+      "Valid_2": "2024-12-03",
+      "Valid_3": "2024-12-03"
     },
     "invalid": {
-      "미만": {
-        "startDate": "2015-12-31",
-        "endDate": "2015-12-31"
-      },
-      "초과": {
-        "startDate": "2025-01-01",
-        "endDate": "2025-01-01"
-      },
-      "월 비정상": {
-        "startDate": "2023-13-01",
-        "endDate": "2024-01-01"
-      },
-      "일 비정상": {
-        "startDate": "2023-12-32",
-        "endDate": "2024-01-01"
-      },
-      "년 비정상": {
-        "startDate": "20155-01-01",
-        "endDate": "2024-01-01"
-      },
-      "Null": {
-        "startDate": "",
-        "endDate": "2024-01-01"
-      },
-      "규격": {
-        "startDate": "2024-01-01",
-        "endDate": "2024.01.01"
-      }
+      "미만": "2015-12-31",
+      "초과": "2025-01-01",
+      "월 비정상": "2024-01-01",
+      "일 비정상": "2024-01-01",
+      "년 비정상": "2024-01-01",
+      "Null_1": "",
+      "Null_2": null,
+      "규격": "2024.01.01"
     }
   },
-  "string_enddate_2": {
+  "enddate_2": {
     "valid": {
-      "Valid_1": {
-        "startDate": "2017-08-01",
-        "endDate": "2017-08-01"
-      },
-      "Valid_2": {
-        "startDate": "2024-12-03",
-        "endDate": "2024-12-03"
-      },
-      "Valid_3": {
-        "startDate": "2024-01-01",
-        "endDate": "2024-12-03"
-      }
+      "Valid_1": "2017-08-01",
+      "Valid_2": "2024-12-03",
+      "Valid_3": "2024-12-03"
     },
     "invalid": {
-      "미만": {
-        "startDate": "2017-07-31",
-        "endDate": "2017-07-31"
-      },
-      "초과": {
-        "startDate": "2025-01-01",
-        "endDate": "2025-01-01"
-      },
-      "월 비정상": {
-        "startDate": "2023-13-01",
-        "endDate": "2024-01-01"
-      },
-      "일 비정상": {
-        "startDate": "2023-12-32",
-        "endDate": "2024-01-01"
-      },
-      "년 비정상": {
-        "startDate": "20155-01-01",
-        "endDate": "2024-01-01"
-      },
-      "Null": {
-        "startDate": "",
-        "endDate": "2024-01-01"
-      },
-      "규격": {
-        "startDate": "2024-01-01",
-        "endDate": "2024.01.01"
-      }
+      "미만": "2017-07-31",
+      "초과": "2025-01-01",
+      "월 비정상": "2024-01-01",
+      "일 비정상": "2024-01-01",
+      "년 비정상": "2024-01-01",
+      "Null_1": "",
+      "Null_2": null,
+      "규격": "2024.01.01"
     }
   }
 }
