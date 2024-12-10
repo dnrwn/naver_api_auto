@@ -1,11 +1,10 @@
 {
   "info": {
     "version": "0.0.2",
-    "date": "2024-12-06",
-    "category": "api_imgae_captcha_nkey"
+    "date": "2024-12-06"
   },
-  "api_imgae_captcha_nkey": {
-    "URL": "https://openapi.naver.com/v1/captcha/nkey",
+  "detail": {
+    "URL": "https://openapi.naver.com/v1/captcha/skey",
     "method": "GET",
     "response_type": "JSON",
     "parameter": {
@@ -24,7 +23,7 @@
       "value": {
         "type": "string",
         "Mandatory/Optional": "Mandatory",
-        "description": "캡차 이미지를 보고 사용자가 입력한 값",
+        "description": "음성 캡차를 듣고 사용자가 입력한 값",
         "case": "string_8"
       }
     },
@@ -32,11 +31,8 @@
       "result": {
         "type": "boolean",
         "description": "검증 결과. - true: 사용자가 입력한 값이 올바른 값입니다. - false: 사용자가 입력한 값이 올바른 값이 아닙니다."
-      },
-      "responseTime": {
-        "type": "string",
-        "description": "사용자가 값을 입력하는 데 걸린 시간(단위: 초). 0~7200 사이의 값을 반환합니다. 시간을 계산할 수 없거나 7200초를 초과했을 때는 -1을 반환합니다."
       }
+    },
+    "category": "api_audio_captcha_skey"
     }
-  }
 }

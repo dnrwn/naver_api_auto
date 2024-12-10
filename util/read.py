@@ -4,10 +4,17 @@ import os
 
 # JSON 파일 읽기
 def api_data_read(api_info):
+    # info 제외
     with open(f"{api_info}", 'r', encoding='utf-8') as file:
         data = json.load(file)
-    return data[data['info']['category']]
+    return data['detail']
 
+
+def api_data_read_info(api_info):
+    # info 포함
+    with open(f"{api_info}", 'r', encoding='utf-8') as file:
+        data = json.load(file)
+    return data
 
 def test_item_read(test_item):
     with open(f"{test_item}", 'r', encoding='utf-8') as file:
@@ -15,7 +22,7 @@ def test_item_read(test_item):
     return data
 
 
-def api_list(path='../api_data'):
+def api_list(path='../api_data/general'):
     a = os.walk(path)
     b = []
     for root, _, files in a:

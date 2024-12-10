@@ -27,6 +27,7 @@ headers = {
     }
 }
 
+
 ## input
 class PARAMETER:
     def __init__(self, api_list_a='../api_data/datalab/api_datalab_search.json'):
@@ -38,8 +39,7 @@ class PARAMETER:
 
         self.para_item = list(self.para_info)
 
-        self.headers = self.head_init()  # header test 용도
-
+        self.headers = self.header_init()  # header test 용도
 
     def para_info(self):
         # api_data의 parameter value로 test item의 case 찾기
@@ -53,6 +53,7 @@ class PARAMETER:
             for param, data in self.api['parameter'].items()
             if data['case'] != ''
         }
+
     def para_init(self):
         # api_data의 parameter 옵션에 맞게 초기 data 생성
         # response 요소로 사용
@@ -67,47 +68,8 @@ class PARAMETER:
             if data['case'] != '' and data['Mandatory/Optional'] == 'Mandatory'
         }
 
-    def test_test_test(self):
-        for param, data in self.api['parameter'].items():
-            if data['Mandatory/Optional'] == 'Mandatory':
-                self.request_body[param] = list(self.item[data['case']]['valid'].values())[0]
-                print(self.request_body)
-            else:
-                self.request_body[param] = None
-
-    def test_test(self):
-        print('para_item : ', self.para_item)
-        print('para_info : ', self.para_info)
-        a = 0
-        for key_a in self.para_item:
-            for k in list(self.item[self.para_info[key_a]]['valid'].values()):
-                pass
-            print('items : ', list(self.item[self.para_info[key_a]]['valid'].values())[0])
-            # a = a + 1
-            #     print('item : ', k)
-
-    def para_loop_2(self, case_type):
-        for key_a in self.para_item:
-            for _, para_v in self.item[self.para_info[key_a]][case_type].items():
-                self.request_body[key_a] = para_v
-                if self.api['method'] == 'GET':
-                    response = requests.get(self.api['URL'], headers=headers['get'], params=self.request_body)
-                else:
-
-                    response = requests.post(self.api['URL'], headers=headers['post'], json=self.request_body)
-                try:
-                    assert response.status_code == 200
-                    # print('pass_body : ', self.request_body)
-                    # print('pass_response : ', response.json())
-
-                except AssertionError:
-                    print('fail_body : ', self.request_body)
-                    print('fail_response : ', response.json())
-
-                except Exception as e:
-                    print('error : ', e)
-
-                time.sleep(0.1)
+    def header_init(self):
+        return headers
 
     def para_loop(self, case_type):
         for query_a, query_b in self.item[self.para_info['query']][case_type].items():
@@ -140,12 +102,3 @@ class PARAMETER:
             #         self.__init__()
             #     self.__init__()
             # self.__init__()
-
-    def head_init(self):
-        return headers
-
-    def header_case(self):
-        if self.api['method'] == 'GET':
-            return requests.get(self.api['URL'], headers=self.headers['get'])
-        elif self.api['method'] == 'POST':
-            return requests.post(self.api['URL'], headers=self.headers['post'])

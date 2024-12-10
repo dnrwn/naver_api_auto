@@ -1,0 +1,15 @@
+{
+  "api_name": "api_datalab_search",
+  "result": "PASS",
+  "response": {
+    "errMsg": "TypeError: .startDate -> should match format \"date\"\n.startDate -> should match format \"date-time\"\n.startDate -> should match some schema in anyOf",
+    "errId": "2024-12-11T02:50:50+09:00/544388081-627353848",
+    "body": "{\"startDate\":\"2024.01.01\",\"endDate\":\"2024.01.01\",\"timeUnit\":null,\"keywordGroups\":[]}"
+  },
+  "parameter": {
+    "startDate": "2024.01.01",
+    "endDate": "2024.01.01",
+    "timeUnit": null,
+    "keywordGroups": []
+  }
+}

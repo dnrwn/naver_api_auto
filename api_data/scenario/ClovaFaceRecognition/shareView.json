@@ -1,0 +1,26 @@
+{
+  "info": {
+    "version": "0.0.2",
+    "date": "2024-12-06"
+  },
+  "detail": {
+    "URL": "https://share.naver.com/web/shareView",
+    "method": "GET",
+    "response_type": "None",
+    "parameter": {
+      "url": {
+        "type": "string",
+        "Mandatory/Optional": "Mandatory",
+        "description": "인코딩한 공유할 웹 URL",
+        "case": "string_7"
+      },
+      "title": {
+        "type": "string",
+        "Mandatory/Optional": "Optional",
+        "description": "인코딩한 제목 문자열",
+        "case": "string_5"
+      }
+    },
+    "category": "shareView"
+  }
+}

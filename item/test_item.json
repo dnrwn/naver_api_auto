@@ -697,17 +697,17 @@
       "1": 0
     },
     "invalid": {
-      "0": 1,
+      "2": 2,
       "string": "abc"
     }
   },
   "integer_4": {
     "valid": {
-      "Null": null,
       "1": 1
     },
     "invalid": {
-      "0": 0,
+      "2": 2,
+      "Null": null,
       "string": "abc"
     }
   },
@@ -795,12 +795,12 @@
   },
   "string_8": {
     "valid": {
-      "string": "abc",
-      "특문": "!@#$%^&*()_+"
+      "string": "???"
     },
     "invalid": {
       "Null": null,
-      "integer": 123
+      "integer": 123,
+      "특문": "akfdkl231"
     }
   },
   "string_9": {

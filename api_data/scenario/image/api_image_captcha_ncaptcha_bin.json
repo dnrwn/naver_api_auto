@@ -1,0 +1,26 @@
+{
+  "info": {
+    "version": "0.0.2",
+    "date": "2024-12-06"
+  },
+  "detail": {
+    "URL": "https://openapi.naver.com/v1/captcha/ncaptcha.bin",
+    "method": "GET",
+    "response_type": "JPG",
+    "parameter": {
+      "key": {
+        "type": "string",
+        "Mandatory/Optional": "Mandatory",
+        "description": "발급 받은 캡차 키",
+        "case": "string_4"
+      }
+    },
+    "response": {
+      "이미지": {
+        "type": "JPEG",
+        "description": "응답에 성공하면 JPEG 형식의 이미지 데이터를 반환합니다."
+      }
+    },
+    "category": "api_image_captcha_ncaptcha_bin"
+  }
+}

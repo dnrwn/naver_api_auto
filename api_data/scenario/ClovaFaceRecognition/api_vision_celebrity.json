@@ -1,0 +1,56 @@
+{
+  "info": {
+    "version": "0.0.2",
+    "date": "2024-12-06"
+  },
+  "detail": {
+    "URL": "https://openapi.naver.com/v1/vision/celebrity",
+    "method": "POST",
+    "response_type": "JSON",
+    "parameter": {
+      "X-Naver-Client-Id": {
+        "type": "string",
+        "Mandatory/Optional": "Mandatory",
+        "description": "X-Naver-Client-Id: 사전 준비사항에서 발급받은 Client ID",
+        "case": "string_4"
+      },
+      "X-Naver-Client-Secret": {
+        "type": "string",
+        "Mandatory/Optional": "Mandatory",
+        "description": "X-Naver-Client-Secret: 사전 준비사항에서 발급 받은 Client Secret",
+        "case": "string_4"
+      }
+    },
+    "response": {
+      "info": {
+        "type": "object",
+        "description": "입력된 이미지 크기와 인식된 얼굴의 개수 정보를 가지는 객체",
+        "size": {
+          "type": "place object",
+          "description": "입력된 이미지의 크기 정보를 가지는 객체"
+        },
+        "faceCount": {
+          "type": "number",
+          "description": "닮은 유명인의 수"
+        }
+      },
+      "faces": {
+        "type": "array(object)",
+        "description": "닮은 유명인별 분석 결과를 가지는 객체 배열",
+        "celebrity": {
+          "type": "object",
+          "description": "닮은 유명인의 정보를 가지는 객체",
+          "value": {
+            "type": "string",
+            "description": "닮은 유명인의 이름"
+          },
+          "confidence": {
+            "type": "number",
+            "description": "해당 유명인과 닮았음을 확신하는 정도. 0에서 1사이의 실수로 표현됩니다. 1에 가까울수록 높은 확신을 나타냅니다."
+          }
+        }
+      }
+    },
+    "category": "api_vision_celebrity"
+  }
+}

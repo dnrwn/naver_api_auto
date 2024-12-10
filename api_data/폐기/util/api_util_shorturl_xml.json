@@ -1,0 +1,49 @@
+{
+  "info": {
+    "version": "0.0.2",
+    "date": "2024-12-06"
+  },
+  "detail": {
+    "URL": "https://openapi.naver.com/v1/util/shorturl.xml",
+    "method": [
+      "GET",
+      "POST"
+    ],
+    "response_type": "XML",
+    "parameter": {
+      "url": {
+        "type": "string",
+        "Mandatory/Optional": "Mandatory",
+        "description": "단축할 원본 URL",
+        "case": "string_7"
+      }
+    },
+    "response": {
+      "result": {
+        "message": {
+          "type": "CDATA",
+          "description": "오류 메시지. 응답에 성공하면 ok를 반환합니다."
+        },
+        "code": {
+          "type": "CDATA",
+          "description": "HTTP 상태 코드"
+        },
+        "hash": {
+          "type": "CDATA",
+          "description": "단축 URL의 해시 정보"
+        },
+        "result": {
+          "url": {
+            "type": "CDATA",
+            "description": "단축된 URL"
+          },
+          "orgUrl": {
+            "type": "CDATA",
+            "description": "원본 URL"
+          }
+        }
+      }
+    },
+    "category": "api_util_shorturl_xml"
+  }
+}

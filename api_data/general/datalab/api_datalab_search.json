@@ -1,0 +1,102 @@
+{
+  "info": {
+    "version": "0.0.2",
+    "date": "2024-12-06"
+  },
+  "detail": {
+    "URL": "https://openapi.naver.com/v1/datalab/search",
+    "method": "POST",
+    "response_type": "JSON",
+    "parameter": {
+      "startDate": {
+        "type": "string",
+        "Mandatory/Optional": "Mandatory",
+        "description": "조회 기간 시작 날짜(yyyy-mm-dd 형식). 2016년 1월 1일부터 조회할 수 있습니다.",
+        "case": "startdate_1"
+      },
+      "endDate": {
+        "type": "string",
+        "Mandatory/Optional": "Mandatory",
+        "description": "조회 기간 종료 날짜(yyyy-mm-dd 형식)",
+        "case": "enddate_1"
+      },
+      "timeUnit": {
+        "type": "string",
+        "Mandatory/Optional": "Mandatory",
+        "description": "구간 단위 - date: 일간, week: 주간, month: 월간",
+        "case": "string_9"
+      },
+      "keywordGroups": {
+        "type": "array(JSON)",
+        "Mandatory/Optional": "Mandatory",
+        "description": "주제어와 주제어에 해당하는 검색어 묶음 쌍의 배열. 최대 5개의 쌍을 배열로 설정할 수 있습니다.",
+        "case": "keywordGroups"
+      },
+      "groupName": {
+        "type": "string",
+        "Mandatory/Optional": "Mandatory",
+        "description": "주제어. 검색어 묶음을 대표하는 이름입니다.",
+        "case": ""
+      },
+      "keywords": {
+        "type": "array(string)",
+        "Mandatory/Optional": "Mandatory",
+        "description": "주제어에 해당하는 검색어. 최대 20개의 검색어를 배열로 설정할 수 있습니다.",
+        "case": ""
+      },
+      "device": {
+        "type": "string",
+        "Mandatory/Optional": "Optional",
+        "description": "범위. 검색 환경에 따른 조건입니다.",
+        "case": "string_2"
+      },
+      "grender": {
+        "type": "string",
+        "Mandatory/Optional": "Optional",
+        "description": "성별. 검색 사용자의 성별에 따른 조건입니다.",
+        "case": "string_3"
+      },
+      "ages": {
+        "type": "array(string)",
+        "Mandatory/Optional": "Optional",
+        "description": "연령. 검색 사용자의 연령에 따른 조건입니다.",
+        "case": "array(string)_2"
+      }
+    },
+    "response": {
+      "startDate": {
+        "type": "string",
+        "description": "조회 기간 시작 날짜(yyyy-mm-dd 형식)."
+      },
+      "endDate": {
+        "type": "string",
+        "description": "조회 기간 종료 날짜(yyyy-mm-dd 형식)"
+      },
+      "timeUnit": {
+        "type": "string",
+        "description": "구간 단위 - date: 일간, week: 주간, month: 월간"
+      },
+      "results": {
+        "title": {
+          "type": "string",
+          "description": "주제어에 해당하는 검색어"
+        },
+        "keywords": {
+          "type": "array(string)",
+          "description": "주제어에 해당하는 검색어"
+        },
+        "data": {
+          "period": {
+            "type": "string",
+            "description": "구간별 시작 날짜(yyyy-mm-dd 형식)"
+          },
+          "ratio": {
+            "type": "string",
+            "description": "구간별 검색량의 상대적 비율. 구간별 결과에서 가장 큰 값을 100으로 설정한 상댓값입니다."
+          }
+        }
+      }
+    },
+    "category": "api_datalab_search"
+  }
+}

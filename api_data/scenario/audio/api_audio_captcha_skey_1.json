@@ -1,11 +1,10 @@
 {
   "info": {
     "version": "0.0.2",
-    "date": "2024-12-06",
-    "category": "api_imgae_captcha_nkey"
+    "date": "2024-12-06"
   },
-  "api_imgae_captcha_nkey": {
-    "URL": "https://openapi.naver.com/v1/captcha/nkey",
+  "detail": {
+    "URL": "https://openapi.naver.com/v1/captcha/skey",
     "method": "GET",
     "response_type": "JSON",
     "parameter": {
@@ -21,6 +20,7 @@
         "type": "string",
         "description": "캡차 키"
       }
-    }
+    },
+    "category": "api_audio_captcha_skey"
   }
 }

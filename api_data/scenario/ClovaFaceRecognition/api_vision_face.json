@@ -1,0 +1,120 @@
+{
+  "info": {
+    "version": "0.0.2",
+    "date": "2024-12-06"
+  },
+  "detail": {
+    "URL": "https://openapi.naver.com/v1/vision/face",
+    "method": "POST",
+    "response_type": "JSON",
+    "parameter": {
+      "X-Naver-Client-Id": {
+        "type": "string",
+        "Mandatory/Optional": "Mandatory",
+        "description": "X-Naver-Client-Id: 사전 준비사항에서 발급받은 Client ID",
+        "case": "string_4"
+      },
+      "X-Naver-Client-Secret": {
+        "type": "string",
+        "Mandatory/Optional": "Mandatory",
+        "description": "X-Naver-Client-Secret: 사전 준비사항에서 발급 받은 Client Secret",
+        "case": "string_4"
+      }
+    },
+    "response": {
+      "info": {
+        "type": "object",
+        "description": "입력된 이미지 크기와 인식된 얼굴의 개수 정보를 가지는 객체",
+        "size": {
+          "type": "place object",
+          "description": "입력된 이미지의 크기 정보를 가지는 객체"
+        },
+        "faceCount": {
+          "type": "number",
+          "description": "감지된 얼굴의 수"
+        }
+      },
+      "faces": {
+        "type": "array(object)",
+        "description": "감지된 얼굴의 개별 분석 결과를 가지는 객체 배열",
+        "roi": {
+          "type": "place object",
+          "description": "감지된 특정 얼굴의 좌표 및 크기 정보를 가지는 객체"
+        },
+        "landmark": {
+          "type": "object",
+          "description": "감지된 얼굴의 눈, 코, 입의 위치를 가지는 객체",
+          "leftEye": {
+            "type": "place object",
+            "description": "왼쪽 눈의 위치"
+          },
+          "rightEye": {
+            "type": "place object",
+            "description": "오른쪽 눈의 위치"
+          },
+          "nose": {
+            "type": "place object",
+            "description": "코의 위치"
+          },
+          "leftMouth": {
+            "type": "place object",
+            "description": "왼쪽 입 꼬리의 위치"
+          },
+          "rightMouth": {
+            "type": "place object",
+            "description": "오른 쪽 입 꼬리의 위치"
+          }
+        },
+        "gender": {
+          "type": "object",
+          "description": "감지된 얼굴의 성별을 추정한 정보를 가지는 객체",
+          "value": {
+            "type": "string",
+            "description": "인식된 성별. 'male' 또는 'female' 값을 가집니다."
+          },
+          "confidence": {
+            "type": "number",
+            "description": "인식된 성별을 확신하는 정도. 0에서 1사이의 실수로 표현됩니다. 1에 가까울수록 높은 확신을 나타냅니다."
+          }
+        },
+        "age": {
+          "type": "object",
+          "description": "감지된 얼굴의 나이를 추정한 정보를 가지는 객체",
+          "value": {
+            "type": "string",
+            "description": "인식된 나이. '22~26'와 같이 나이의 범위가 표현된 문자열입니다."
+          },
+          "confidence": {
+            "type": "number",
+            "description": "인식된 나이를 확신하는 정도. 0에서 1사이의 실수로 표현됩니다. 1에 가까울수록 높은 확신을 나타냅니다."
+          }
+        },
+        "emotion": {
+          "type": "object",
+          "description": "감지된 얼굴의 감정을 추천한 정보를 가지는 객체",
+          "value": {
+            "type": "string",
+            "description": "인식된 감정. 'smile'과 같이 얼굴의 표정이나 감정을 나타내는 문자열입니다. 다음과 같은 값을 가집니다. angry, disgust, fear, laugh, neutral, sad, surprise, smile, talking"
+          },
+          "confidence": {
+            "type": "number",
+            "description": "인식된 감정을 확신하는 정도. 0에서 1사이의 실수로 표현됩니다. 1에 가까울수록 높은 확신을 나타냅니다."
+          }
+        },
+        "pose": {
+          "type": "object",
+          "description": "감지된 얼굴이 어떤 포즈인지 추정한 정보를 가지는 객체",
+          "value": {
+            "type": "string",
+            "description": "인식된 얼굴의 포즈. 'frontal_face'와 같이 얼굴의 방향을 나타내는 문자열입니다. 다음과 같은 값을 가집니다. part_face, false_face, sunglasses, frontal_face, left_face, right_face, rotate_face"
+          },
+          "confidence": {
+            "type": "number",
+            "description": "인식된 얼굴의 방향을 확신하는 정도. 0에서 1사이의 실수로 표현됩니다. 1에 가까울수록 높은 확신을 나타냅니다."
+          }
+        }
+      }
+    },
+    "category": "api_vision_face"
+  }
+}
