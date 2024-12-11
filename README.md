@@ -3,7 +3,7 @@ API Test를 자동화하기 위한 script 작성 절차 정리
 
 ---
 # 요약
-json 형태의 data를 이용하여 한 개의 함수로 모든 case를 실행하도록 대응하고 실행 결과 파일을 json 형태로 저장
+json 형태의 data를 이용하여 최소의 함수로 모든 case를 실행하도록 대응하고 실행 결과 파일을 json 형태로 저장
 
 
 ---
@@ -50,3 +50,25 @@ json 형태의 data를 이용하여 한 개의 함수로 모든 case를 실행�
 10. script 실행 script 작성 (../case/run.py)
 
 ---
+# 결과
+생성 경로 : ..\result\20241212\api_search_adult\PASS\api_search_adult_header_PASS_20241212-014213.json
+```json
+{
+    "api_name": "api_search_adult",
+    "result": "PASS",
+    "header": {
+        "Host": "openapi.naver.com",
+        "X-Naver-Client-Id": "uv_lv7I3jpwBqWkHVDOx",
+        "X-Naver-Client-Secret": null
+    },
+    "response": {
+        "errorMessage": "Not Exist Client Secret : Authentication failed. (인증에 실패했습니다.)",
+        "errorCode": "024"
+    },
+    "parameter": {
+        "query": "abc",
+        "display": 100,
+        "startDate": 1000,
+        "sort": "date"
+    }
+}
