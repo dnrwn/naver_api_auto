@@ -3,7 +3,10 @@ API Test를 자동화하기 위한 script 작성 절차 정리
 
 ---
 # 요약
-json 형태의 data를 이용하여 최소의 함수로 모든 case를 실행하도록 대응하고 실행 결과 파일을 json 형태로 저장
+API Test를 자동화하기 위한 script 작성
+- 요구사항과 Test item을 Json 데이터로 가공
+- Json 데이터를 이용하여 최소의 함수로 모든 case를 실행하도록 대응
+- 실행 결과 파일을 Json 데이터로 저장
 
 
 ---
