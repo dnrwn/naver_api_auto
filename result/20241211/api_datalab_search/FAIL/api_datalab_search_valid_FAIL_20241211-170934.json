@@ -1,0 +1,46 @@
+{
+  "api_name": "api_datalab_search",
+  "result": "FAIL",
+  "header": {
+    "Host": "openapi.naver.com",
+    "X-Naver-Client-Id": "uv_lv7I3jpwBqWkHVDOx",
+    "X-Naver-Client-Secret": "2FttqJ6b99"
+  },
+  "response": {
+    "errMsg": "TypeError: Invalid Date Range",
+    "errId": "2024-12-11T17:09:33+09:00/641846441-407536970",
+    "body": "{\"startDate\":\"2024-12-03\",\"endDate\":\"2016-01-01\",\"timeUnit\":\"date\",\"keywordGroups\":[{\"groupName\":\"ABC\",\"keywords\":[\"A\",\"B\",\"C\",\"D\",\"E\",\"F\",\"G\",\"H\",\"I\",\"J\",\"K\",\"L\",\"M\",\"N\",\"O\",\"P\",\"Q\",\"R\",\"S\",\"T\"]}]}"
+  },
+  "parameter": {
+    "startDate": "2024-12-03",
+    "endDate": "2016-01-01",
+    "timeUnit": "date",
+    "keywordGroups": [
+      {
+        "groupName": "ABC",
+        "keywords": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F",
+          "G",
+          "H",
+          "I",
+          "J",
+          "K",
+          "L",
+          "M",
+          "N",
+          "O",
+          "P",
+          "Q",
+          "R",
+          "S",
+          "T"
+        ]
+      }
+    ]
+  }
+}

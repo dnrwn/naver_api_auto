@@ -1,0 +1,103 @@
+{
+  "api_name": "api_datalab_search",
+  "result": "PASS",
+  "header": {
+    "Host": "openapi.naver.com",
+    "X-Naver-Client-Id": "uv_lv7I3jpwBqWkHVDOx",
+    "X-Naver-Client-Secret": "2FttqJ6b99"
+  },
+  "response": {
+    "startDate": "2024-01-01",
+    "endDate": "2024-12-11",
+    "timeUnit": "month",
+    "results": [
+      {
+        "title": "QQQ",
+        "keywords": [
+          "1234EFGH"
+        ],
+        "data": []
+      },
+      {
+        "title": "WWW",
+        "keywords": [
+          "9876ZXCV"
+        ],
+        "data": []
+      },
+      {
+        "title": "EEE",
+        "keywords": [
+          "5678QWER"
+        ],
+        "data": []
+      },
+      {
+        "title": "RRR",
+        "keywords": [
+          "8765ASDF"
+        ],
+        "data": []
+      },
+      {
+        "title": "TTT",
+        "keywords": [
+          "0000XXXX"
+        ],
+        "data": []
+      }
+    ]
+  },
+  "parameter": {
+    "startDate": "2024-01-01",
+    "endDate": "2024-12-03",
+    "timeUnit": "month",
+    "keywordGroups": [
+      {
+        "groupName": "QQQ",
+        "keywords": [
+          "1234EFGH"
+        ]
+      },
+      {
+        "groupName": "WWW",
+        "keywords": [
+          "9876ZXCV"
+        ]
+      },
+      {
+        "groupName": "EEE",
+        "keywords": [
+          "5678QWER"
+        ]
+      },
+      {
+        "groupName": "RRR",
+        "keywords": [
+          "8765ASDF"
+        ]
+      },
+      {
+        "groupName": "TTT",
+        "keywords": [
+          "0000XXXX"
+        ]
+      }
+    ],
+    "device": "mo",
+    "grender": "f",
+    "ages": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11"
+    ]
+  }
+}

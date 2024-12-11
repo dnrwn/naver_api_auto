@@ -1,0 +1,52 @@
+{
+  "api_name": "api_datalab_search",
+  "result": "FAIL",
+  "header": {
+    "Host": "openapi.naver.com",
+    "X-Naver-Client-Id": "uv_lv7I3jpwBqWkHVDOx",
+    "X-Naver-Client-Secret": "2FttqJ6b99"
+  },
+  "response": {
+    "errMsg": "TypeError: .device -> should be string",
+    "errId": "2024-12-11T17:09:44+09:00/128324181-726281970",
+    "body": "{\"startDate\":\"2024-01-01\",\"endDate\":\"2024-12-03\",\"timeUnit\":\"month\",\"keywordGroups\":[{\"groupName\":\"QQQ\",\"keywords\":[\"1234EFGH\"]},{\"groupName\":\"WWW\",\"keywords\":[\"9876ZXCV\"]},{\"groupName\":\"EEE\",\"keywords\":[\"5678QWER\"]},{\"groupName\":\"RRR\",\"keywords\":[\"8765ASDF\"]},{\"groupName\":\"TTT\",\"keywords\":[\"0000XXXX\"]}],\"device\":null}"
+  },
+  "parameter": {
+    "startDate": "2024-01-01",
+    "endDate": "2024-12-03",
+    "timeUnit": "month",
+    "keywordGroups": [
+      {
+        "groupName": "QQQ",
+        "keywords": [
+          "1234EFGH"
+        ]
+      },
+      {
+        "groupName": "WWW",
+        "keywords": [
+          "9876ZXCV"
+        ]
+      },
+      {
+        "groupName": "EEE",
+        "keywords": [
+          "5678QWER"
+        ]
+      },
+      {
+        "groupName": "RRR",
+        "keywords": [
+          "8765ASDF"
+        ]
+      },
+      {
+        "groupName": "TTT",
+        "keywords": [
+          "0000XXXX"
+        ]
+      }
+    ],
+    "device": null
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "api_name": "api_datalab_search",
+  "result": "PASS",
+  "header": {
+    "Host": "openapi.naver.com",
+    "X-Naver-Client-Id": "uv_lv7I3jpwBqWkHVDOx",
+    "X-Naver-Client-Secret": "2FttqJ6b99"
+  },
+  "response": {
+    "startDate": "2016-01-01",
+    "endDate": "2016-01-01",
+    "timeUnit": "date",
+    "results": [
+      {
+        "title": "ABC",
+        "keywords": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F",
+          "G",
+          "H",
+          "I",
+          "J",
+          "K",
+          "L",
+          "M",
+          "N",
+          "O",
+          "P",
+          "Q",
+          "R",
+          "S",
+          "T"
+        ],
+        "data": [
+          {
+            "period": "2016-01-01",
+            "ratio": 100
+          }
+        ]
+      }
+    ]
+  },
+  "parameter": {
+    "startDate": "2016-01-01",
+    "endDate": "2016-01-01",
+    "timeUnit": "date",
+    "keywordGroups": [
+      {
+        "groupName": "ABC",
+        "keywords": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F",
+          "G",
+          "H",
+          "I",
+          "J",
+          "K",
+          "L",
+          "M",
+          "N",
+          "O",
+          "P",
+          "Q",
+          "R",
+          "S",
+          "T"
+        ]
+      }
+    ]
+  }
+}

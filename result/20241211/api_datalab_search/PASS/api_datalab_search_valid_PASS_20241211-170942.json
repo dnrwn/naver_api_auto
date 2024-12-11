@@ -1,0 +1,123 @@
+{
+  "api_name": "api_datalab_search",
+  "result": "PASS",
+  "header": {
+    "Host": "openapi.naver.com",
+    "X-Naver-Client-Id": "uv_lv7I3jpwBqWkHVDOx",
+    "X-Naver-Client-Secret": "2FttqJ6b99"
+  },
+  "response": {
+    "startDate": "2024-01-01",
+    "endDate": "2024-12-11",
+    "timeUnit": "month",
+    "results": [
+      {
+        "title": "ABC",
+        "keywords": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F",
+          "G",
+          "H",
+          "I",
+          "J",
+          "K",
+          "L",
+          "M",
+          "N",
+          "O",
+          "P",
+          "Q",
+          "R",
+          "S",
+          "T"
+        ],
+        "data": [
+          {
+            "period": "2024-01-01",
+            "ratio": 96.78289
+          },
+          {
+            "period": "2024-02-01",
+            "ratio": 91.81376
+          },
+          {
+            "period": "2024-03-01",
+            "ratio": 100
+          },
+          {
+            "period": "2024-04-01",
+            "ratio": 98.94282
+          },
+          {
+            "period": "2024-05-01",
+            "ratio": 97.93797
+          },
+          {
+            "period": "2024-06-01",
+            "ratio": 94.21213
+          },
+          {
+            "period": "2024-07-01",
+            "ratio": 97.3683
+          },
+          {
+            "period": "2024-08-01",
+            "ratio": 96.05694
+          },
+          {
+            "period": "2024-09-01",
+            "ratio": 92.03409
+          },
+          {
+            "period": "2024-10-01",
+            "ratio": 97.4867
+          },
+          {
+            "period": "2024-11-01",
+            "ratio": 93.09859
+          },
+          {
+            "period": "2024-12-01",
+            "ratio": 30.91403
+          }
+        ]
+      }
+    ]
+  },
+  "parameter": {
+    "startDate": "2024-01-01",
+    "endDate": "2024-12-03",
+    "timeUnit": "month",
+    "keywordGroups": [
+      {
+        "groupName": "ABC",
+        "keywords": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F",
+          "G",
+          "H",
+          "I",
+          "J",
+          "K",
+          "L",
+          "M",
+          "N",
+          "O",
+          "P",
+          "Q",
+          "R",
+          "S",
+          "T"
+        ]
+      }
+    ]
+  }
+}
