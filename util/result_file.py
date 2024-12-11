@@ -3,7 +3,7 @@ import os
 from datetime import datetime
 
 
-def result_file(api_name, case_type, result, request_body, response_data=None, error_message=None):
+def result_file(api_name, case_type, result, request_body, response_data=None, error_message=None, header=None):
     # 파일 생성 경로
     date_1 = datetime.now().strftime('%Y%m%d')
     path = f"../result/{date_1}/{api_name}/{result}"
@@ -18,6 +18,8 @@ def result_file(api_name, case_type, result, request_body, response_data=None, e
         "api_name": api_name,
         "result": result
     }
+    if header:
+        data['header'] = header
     if response_data:  # 응답 데이터가 있으면 추가
         data["response"] = response_data
         data["parameter"] = request_body

@@ -882,5 +882,10 @@
       "Null_2": null,
       "규격": "2024.01.01"
     }
+  },
+  "header": {
+    "case_1": null,
+    "case_2": "abcd",
+    "case_3": "123"
   }
 }
